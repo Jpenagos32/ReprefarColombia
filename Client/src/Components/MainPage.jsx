@@ -1,5 +1,6 @@
 import { Tab, Tabs } from "react-bootstrap";
 import { Inicio } from "./Inicio";
+import { Productos } from "./Productos";
 const MainPage = () => {
   return (
     <div className="container mt-1">
@@ -14,7 +15,7 @@ const MainPage = () => {
           <Inicio />
         </Tab>
         <Tab eventKey="productos" title="Productos">
-          <h1>Contenido de Productos</h1>
+          <Productos />
         </Tab>
         <Tab eventKey="nosotros" title="Nosotros">
           <h1>Contenido de Nosotros</h1>
