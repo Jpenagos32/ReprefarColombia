@@ -11,7 +11,7 @@ const Productos = () => {
         {
           Data.map(item => (
             <Card
-              key={item.id}
+              key={item.title}
               image={item.image}
               title={item.title}
               price={item.price}

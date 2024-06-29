@@ -1,8 +1,8 @@
 import { InputGroup, Form, Button, Container, Col, Row } from "react-bootstrap";
 import { FaCartShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { FaFacebookSquare } from "react-icons/fa";
-import { IoLogoInstagram } from "react-icons/io5";
+import { SocialMediaIcons } from "./SocialMediaIcons";
+
 const Header = () => {
   return (
     <>
@@ -31,9 +31,8 @@ const Header = () => {
             <Col xs lg="2">
               <Button variant="outline-light" className="mt-2"><FaCartShopping /> Ir al Carrito</Button>
             </Col>
-            <Col xs lg="1">
-              <Button href="https://web.facebook.com/" className="mt-2" target="_blank"><FaFacebookSquare /></Button>
-              <Button href="https://www.instagram.com/" className="mt-2" target="_blank"><IoLogoInstagram /></Button>
+            <Col xs lg="1" style={{display: 'flex', justifyContent: 'center' , alignItems: 'center'}}>
+              <SocialMediaIcons/>
             </Col>
 
           </Row>

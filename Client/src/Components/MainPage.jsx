@@ -1,12 +1,15 @@
 import { Tab, Tabs } from "react-bootstrap";
 import { Inicio } from "./Inicio";
 import { Productos } from "./Productos";
+import { useState } from "react";
 const MainPage = () => {
+  const [key, setKey ] =useState('inicio')
   return (
     <div className="container mt-1">
       <Tabs
-        defaultActiveKey="inicio"
+        activeKey={key}
         id="fill-tab-example"
+        onSelect={(key) => {setKey(key)}}
         className="mb-3 "
         fill
         data-bs-theme="light"
