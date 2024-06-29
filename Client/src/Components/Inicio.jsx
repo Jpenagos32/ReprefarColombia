@@ -1,53 +1,33 @@
-import { Carousel } from "react-bootstrap";
+import { Brands } from "./Brands";
+import { Icons } from "./Icons";
+
 const Inicio = () => {
+  const styles = {
+    width: '70%'
+  }
   return (
-    <Carousel data-bs-theme="dark">
-
-      <Carousel.Item className="w-100">
-        <img
-          src="Images/LogoReprefar.png"
-          alt=""
-          className="d-block img-fluid "
-          width='300px'
-          style={{ margin: 'auto' }}
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item className="w-100">
+    <>
+      <div className="container-fluid">
         <img
           src="Images/LogoReprefarLargo.png"
-          alt=""
-          className="d-block img-fluid"
-          width='auto'
-          style={{ margin: 'auto' }}
+          alt="Logo de reprefar"
+          className="img-fluid mb-5 mt-5 rounded mx-auto d-block"
+          style={styles}
         />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
+        <h1 className='text-center'>Reprefar Colombia</h1>
+        <p className="text-center text-secondary">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem at accusamus deleniti fuga sapiente nisi, repellendus ducimus accusantium praesentium iste consequuntur provident ab blanditiis minima vitae incidunt pariatur aperiam voluptatem?
+        </p>
+        <hr />
+        
+        <h2 className="text-center text-primary mt-5">Las Mejores Marcas</h2>
+        <Brands />
 
-      <Carousel.Item className="w-100">
-        <img
-          src="Images/LogoReprefar.png"
-          alt=""
-          className="d-block img-fluid"
-          width='300px'
-          style={{ margin: 'auto' }}
-        />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
+        <h2 className="text-center text-primary mt-5">La Mejor Calidad</h2>
+        <Icons/>
 
-    </Carousel>
+      </div>
+    </>
   )
 }
 export { Inicio };
