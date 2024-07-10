@@ -2,14 +2,18 @@
 import { Header } from './Components/Header'
 import { MainPage } from './Components/MainPage'
 import { Footer } from './Components/Footer'
+import { StickyButton } from './Components/StickyButton'
 
 function App() {
 
   return (
     <>
+
       <Header />
       <MainPage />
-      <Footer/>
+      <StickyButton/>
+      <Footer />
+
     </>
   )
 }

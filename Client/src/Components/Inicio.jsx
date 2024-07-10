@@ -16,15 +16,15 @@ const Inicio = () => {
         />
         <h1 className='text-center text-primary'>Reprefar Colombia</h1>
         <p className="text-center text-secondary">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem at accusamus deleniti fuga sapiente nisi, repellendus ducimus accusantium praesentium iste consequuntur provident ab blanditiis minima vitae incidunt pariatur aperiam voluptatem?
+          Somos una empresa comprometida con la representación de compañías, productos y marcas en el sector de la salud,contribuyendo al crecimiento y consolidación tanto en el ámbito medico como en el de las droguerías.
         </p>
         <hr />
-        
+
         <h2 className="text-center text-primary mt-5">Las Mejores Marcas</h2>
         <Brands />
 
         <h2 className="text-center text-primary mt-5">La Mejor Calidad</h2>
-        <Icons/>
+        <Icons />
 
       </div>
     </>
