@@ -2,6 +2,7 @@ import { Tab, Tabs } from "react-bootstrap";
 import { Inicio } from "./Inicio";
 import { Productos } from "./Productos";
 import { useState } from "react";
+import { About } from "./About";
 const MainPage = () => {
   const [key, setKey ] =useState('inicio')
   return (
@@ -21,7 +22,7 @@ const MainPage = () => {
           <Productos />
         </Tab>
         <Tab eventKey="nosotros" title="Nosotros">
-          <h1>Contenido de Nosotros</h1>
+          <About/>
         </Tab>
         <Tab eventKey="contacto" title="Contacto">
           <h1>

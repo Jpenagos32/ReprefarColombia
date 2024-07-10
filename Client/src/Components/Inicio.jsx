@@ -14,7 +14,7 @@ const Inicio = () => {
           className="img-fluid mb-5 mt-5 rounded mx-auto d-block"
           style={styles}
         />
-        <h1 className='text-center'>Reprefar Colombia</h1>
+        <h1 className='text-center text-primary'>Reprefar Colombia</h1>
         <p className="text-center text-secondary">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem at accusamus deleniti fuga sapiente nisi, repellendus ducimus accusantium praesentium iste consequuntur provident ab blanditiis minima vitae incidunt pariatur aperiam voluptatem?
         </p>
