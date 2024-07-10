@@ -2,8 +2,10 @@ import { InputGroup, Form, Button, Container, Col, Row } from "react-bootstrap";
 import { FaCartShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { SocialMediaIcons } from "./SocialMediaIcons";
+import { useMainStore } from "../stores/mainStore";
 
 const Header = () => {
+  const { setKey } = useMainStore()
   return (
     <>
       <header className="container-fluid p-2 bg-primary">
@@ -22,7 +24,7 @@ const Header = () => {
                   aria-label="Buscar Producto"
                   aria-describedby="basic-addon2"
                 />
-                <Button variant="secondary" id="button-addon2">
+                <Button variant="secondary" id="button-addon2" onClick={() => setKey('productos')}>
                   Buscar
                 </Button>
               </InputGroup>
@@ -31,8 +33,8 @@ const Header = () => {
             <Col xs lg="2">
               <Button variant="outline-light" className="mt-2"><FaCartShopping /> Ir al Carrito</Button>
             </Col>
-            <Col xs lg="1" style={{display: 'flex', justifyContent: 'center' , alignItems: 'center'}}>
-              <SocialMediaIcons/>
+            <Col xs lg="1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <SocialMediaIcons />
             </Col>
 
           </Row>

@@ -1,10 +1,13 @@
 import { Tab, Tabs } from "react-bootstrap";
 import { Inicio } from "./Inicio";
 import { Productos } from "./Productos";
-import { useState } from "react";
 import { About } from "./About";
+import { Contact } from "./Contact";
+import { useMainStore } from "../stores/mainStore";
+
 const MainPage = () => {
-  const [key, setKey ] =useState('inicio')
+  const {key, setKey} =useMainStore();
+
   return (
     <div className="container mt-1">
       <Tabs
@@ -25,9 +28,7 @@ const MainPage = () => {
           <About/>
         </Tab>
         <Tab eventKey="contacto" title="Contacto">
-          <h1>
-            Formulario de Contacto
-          </h1>
+          <Contact/>
         </Tab>
         <Tab eventKey="blog" title="Blog">
           <h1>

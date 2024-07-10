@@ -11,7 +11,7 @@ const About = () => {
         </p>
       </div>
         <hr />
-      <Container className="mt-5">
+      <Container className="mt-5 mb-5">
         <Row>
           <Col className="text-center">
             <h3 className="text-primary ">Misión</h3>
@@ -30,7 +30,7 @@ const About = () => {
       </Container>
       <hr />
       <Container className="text-center">
-        <h2 className="text-center text-primary mt-1">Nuestras Marcas</h2>
+        <h2 className="text-center text-primary mt-5">Nuestras Marcas</h2>
         <p>
           En la actualidad Reprefar Colombia cuenta con marcas propias como:
         </p>

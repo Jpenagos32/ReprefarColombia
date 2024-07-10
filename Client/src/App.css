@@ -105,7 +105,7 @@ html {
   align-items: center;
   width: 32px;
   height: 32px;
-  background-image: url(../public/Images/whatsapp.svg);
+  background-image: url(/Images/whatsapp.svg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
